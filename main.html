@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compare Two Numbers</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <script>
+    // Prompt the user to enter the first number
+    var number1 = prompt("Enter the first number:");
 
+    // Prompt the user to enter the second number
+    var number2 = prompt("Enter the second number:");
+
+    // Convert the inputs to numbers
+    number1 = parseFloat(number1);
+    number2 = parseFloat(number2);
+
+    // Compare the two numbers and store the result
+    var result = (number1 === number2);
+
+    // Display an alert with the result
+    alert("Are the numbers equal? " + result);
+  </script>
 </body>
-
 </html>
